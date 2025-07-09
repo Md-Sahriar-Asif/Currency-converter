@@ -77,12 +77,14 @@ form input:focus {
 .select-container select {
     font-size: 1rem;
     width: auto;
+    cursor: pointer;
 }
 
 .msg {
     margin: 1.7rem 0 1.7rem 0;
     font-size: 1.15rem;
-    font-weight:900;
+    font-weight:700;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,4 +96,10 @@ form button {
     color: white;
     font-size: 1.15rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #922a79;
+    box-shadow: 0 0 5px rgba(175, 77, 152, 0.4);
 }
